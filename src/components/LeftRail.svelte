@@ -9,6 +9,7 @@
     import TableRowSvg from "../icons/TableRowSvg.svelte";
     import NewsPaperSvg from "../icons/NewsPaper.svelte";
     import ConfigSvg from "../icons/ConfigSvg.svelte";
+    import UserSvg from "../icons/UserSvg.svelte";
 
     type Tiles = "agenda" | "grades" | "saep" | "redaction" | "user" | "config";
 
@@ -66,6 +67,17 @@
         <hr class="opacity-30" />
 
         <svelte:fragment slot="trail">
+            <AppRailAnchor
+                href="/user"
+                selected={route == "user"}
+                title="Usuário"
+            >
+                <svelte:fragment slot="lead">
+                    <UserSvg size={svgSize} />
+                </svelte:fragment>
+                <span>Usuário</span>
+            </AppRailAnchor>
+
             <AppRailAnchor
                 href="/config"
                 selected={route == "config"}
