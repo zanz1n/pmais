@@ -2,6 +2,7 @@ use serde::{de::DeserializeOwned, Serialize};
 use std::{future::Future, time::Duration};
 
 mod encoding;
+pub mod memory;
 
 #[derive(Debug, thiserror::Error)]
 pub enum KvStoreError {
