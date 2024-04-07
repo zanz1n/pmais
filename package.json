@@ -12,7 +12,8 @@
     "tauri": "tauri"
   },
   "dependencies": {
-    "@tauri-apps/api": "^1"
+    "@tauri-apps/api": "^1",
+    "ts-results": "^3.3.0"
   },
   "devDependencies": {
     "@skeletonlabs/skeleton": "^2.9.0",
