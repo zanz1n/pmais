@@ -3,6 +3,7 @@ use std::{future::Future, time::Duration};
 
 mod encoding;
 pub mod memory;
+pub mod sqlite;
 
 #[derive(Debug, thiserror::Error)]
 pub enum KvStoreError {
