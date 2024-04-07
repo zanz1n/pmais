@@ -13,6 +13,7 @@ const config = {
       strict: true,
     }),
   },
+  
 };
 
 export default config;
