@@ -1,8 +1,8 @@
 <script lang="ts">
     import Svg from "../components/Svg.svelte";
 
-    export let reverse: boolean | undefined;
-    export let size: string | undefined;
+    export let reverse: boolean | undefined = undefined;
+    export let size: string | undefined = undefined;
 </script>
 
 <Svg {size} {reverse} fill="currentColor">
