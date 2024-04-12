@@ -51,7 +51,7 @@ const mat: Subject = {
 } satisfies Subject;
 
 const port: Subject = {
-    id: 1,
+    id: 2,
     name: "Português",
     final: false,
     classAverage: "7.8",
