@@ -1,9 +1,14 @@
 [package]
 name = "pmais"
 version = "0.0.0"
-description = "Better version of student.p4ed.com"
-authors = ["Izan Rodrigues <izanrodrigues999@gmail.com>"]
 edition = "2021"
+license = "Apache-2.0"
+
+authors = [
+    "Izan Rodrigues <izanrodrigues999@gmail.com>",
+    "Gustavo Gimenez <gustavohsg2@hotmail.com>",
+]
+description = "Better version of student.p4ed.com"
 
 [features]
 custom-protocol = ["tauri/custom-protocol"]
