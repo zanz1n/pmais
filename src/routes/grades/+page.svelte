@@ -8,6 +8,7 @@
     import DrawerContent from "./DrawerContent.svelte";
 
     const drawerStore = getDrawerStore();
+<<<<<<< Updated upstream
 
     let drawerSettings: DrawerSettings = {
         id: "subject-drawer",
@@ -35,6 +36,20 @@
         console.log(id);
 
         drawerSettings.meta = sub;
+=======
+    const drawerSettings: DrawerSettings = {
+        id: 'example-3',
+        // Provide your property overrides:
+        bgDrawer: 'bg-purple-900 text-white',
+        bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
+        width: 'md:w-[480px] w-full',
+        padding: 'p-4',
+        // Remove the 'margin' property
+        rounded: 'rounded-xl',
+    };
+    
+    function openM (){
+>>>>>>> Stashed changes
         drawerStore.open(drawerSettings);
     }
 
