@@ -1,0 +1,39 @@
+[workspace]
+resolver = "2"
+members = ["src-tauri"]
+
+[profile.release]
+panic = "unwind"
+lto = true
+codegen-units = 1
+
+[profile.dev]
+panic = "abort"
+opt-level = 1
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+
+tauri = { version = "1", features = ["shell-open"] }
+tauri-plugin-log = { git = "https://github.com/tauri-apps/plugins-workspace", branch = "v1", features = [
+    "colored",
+] }
+tauri-build = { version = "1", features = [] }
+
+log = "0.4"
+env_logger = "0.11"
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+bson = "2.11"
+chrono = "0.4"
+
+thiserror = "1.0"
+
+sqlx = { version = "0.7", features = [
+    "runtime-tokio",
+    "tls-rustls",
+    "sqlite",
+    "migrate",
+    "chrono",
+] }

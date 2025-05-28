@@ -1,3 +1,10 @@
+# Rust
+/target/
+Cargo.lock
+/gen/schemas
+expand.rs
+/tmp/
+
 # Logs
 logs
 *.log
